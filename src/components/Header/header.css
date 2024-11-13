@@ -1,0 +1,103 @@
+
+.header__container {
+    background-color: var(--gpt-sidebar);
+    padding: 1rem;
+}
+
+.header__container .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo_white {
+    object-fit: contain;
+}
+
+.header .menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.header .menu ul {
+    width: 20rem;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    background-color: var(--gpt-sidebar);
+    padding: 2rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition: all .5s ease-in-out;
+}
+
+.header .menu ul.open {
+    right: 0;
+}
+
+.header .menu ul.close {
+    right: -20rem;
+}
+
+.header .menu .user {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header .menu .user h3 {
+    color: var(--gpt-text);
+}
+
+.header .menu .user .logout {
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.header .menu ul .icon_x {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header .menu ul li {
+    color: var(--gpt-text);
+}
+
+.header .icon_menu {
+    color: #fff;
+}
+
+@media screen and (min-width: 48rem) {
+    .header .menu {
+        display: flex;
+        align-items: center;
+    }
+    .header .menu ul {
+        flex-direction: row;
+        position: initial;
+        right: 0;
+        width: fit-content;
+        height: auto;
+        padding: 0;
+    }
+
+    .header .icon_menu {
+        display: none;
+    }
+
+    .header .menu ul .icon_x {
+        display: none;
+    }
+
+    .header .menu .user {
+        width: fit-content;
+        gap: 0;
+    }
+}

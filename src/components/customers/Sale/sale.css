@@ -1,0 +1,31 @@
+
+.sale__container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.sale__container .sale {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.sale__container .sale h2 {
+    color: var(--gpt-gray);
+}
+
+.sale__container .sale span {
+    color: #777;
+}
+
+.doctor .btn_app {
+    background-color: var(--gpt-sidebar);
+    color: var(--gpt-text);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}

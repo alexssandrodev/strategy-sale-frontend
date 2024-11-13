@@ -1,0 +1,25 @@
+
+.services__container h2 {
+    margin-bottom: 4rem;
+}
+
+.services__container .box_services {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.box_services .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: .1rem solid #aeadad;
+    padding-bottom: .5rem;
+}
+
+.box_services .services_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

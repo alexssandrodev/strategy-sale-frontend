@@ -1,0 +1,26 @@
+
+.doctors__container .doctors h3 {
+    margin-bottom: 4rem;
+}
+
+.doctors__container .doctors  .list_doctors {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.list_doctors p {
+    color: #777;
+}
+
+@media screen and (min-width: 48rem) {
+    .doctors__container .doctors .list_doctors {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 64rem) {
+    .doctors__container .doctors .list_doctors {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

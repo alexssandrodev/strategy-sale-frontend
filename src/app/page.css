@@ -1,0 +1,43 @@
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.links .box_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--strategy-blue);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.links .box_link strong {
+    color: var(--gpt-text);
+}
+
+.links .box_link span {
+    color: var(--gpt-text);
+}
+
+@media screen and (min-width: 48rem) {
+    .links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 64rem) {
+    .links {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
